@@ -20,9 +20,10 @@
 
 <div class="panel-footer">
 
-<%= link_to 'Keep Shopping', store_index_url , class:"btn btn-primary" %>
+<%= link_to 'Keep Shopping', store_index_url , class:"btn btn-primary" %> |
 <%= link_to 'Edit', edit_cart_path(@cart) ,class:"btn btn-xs btn-danger" %> |
 <%= link_to 'Back', carts_path , class:"btn btn-xs btn-danger" %> |
+<%= link_to 'Checkout', new_order_path, method: :get, class:"btn btn-xs btn-danger" %> |
 <%= link_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-xs btn-danger" %>
 
 </div></div>
